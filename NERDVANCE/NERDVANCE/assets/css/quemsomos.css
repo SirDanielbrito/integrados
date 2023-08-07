@@ -1,0 +1,46 @@
+body{
+	background-image:url(img/flash.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	background-position:center;	
+}
+#topo{
+	width: 102%;
+	height: 17%;
+	background: #FFF none repeat scroll 0% 0%;
+	margin: -1% 0% 0% -1%;
+	box-shadow: -3px 16px 21px #000;
+	position:relative;
+	top: 0%;
+}
+#logo{
+	width:270px; 
+	height:90px;
+}
+#topo img{
+	margin:20px;
+	position:absolute;
+}
+.mar{
+	width: 55%;
+	height: 150%;
+	background:#ffffff;
+	border-radius:15px;
+	border:15px #004C75 solid;
+	margin-top: 13%;
+}
+#corpo{
+	width:80%;
+	height:98%;
+	background:#ffffff;
+	opacity:0,85;
+	text-align:justify;
+	margin-bottom: 5%;
+}
+#corpo img{
+	margin-top:7%;
+}
+#corpo #plano{
+	margin-left:-6%;
+}

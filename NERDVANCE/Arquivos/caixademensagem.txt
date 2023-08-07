@@ -1,0 +1,42 @@
+.caixa-de-mensagem{
+	width:500px;
+	height:200px;
+	padding:20px;
+	font-size:18px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-style:italic;
+	
+	
+}
+
+fieldset{
+	border:0;
+}
+
+
+.................HTML.............
+
+<div class="caixa-de-mensagem">
+<form name="form" method="post" action="">
+ <fieldset>
+ <legend>Nome</legend>
+ <input name="nome" type="text" size="50" maxlength="30" required />
+ </fieldset>
+ 
+ <fieldset>
+ <legend>E-mail </legend>
+ <input name="email" type="email" size="50" maxlength="100" required />
+ </fieldset>
+ 
+ <fieldset>
+ <legend>Mensagem</legend>
+ <textarea name="mensagem" cols="50" rows="3" required /></textarea>
+ </fieldset><br>
+ 
+ <fieldset>
+ <input type="submit" name="button" value="enviar">
+ </fieldset>
+ </form>
+ 
+
+</div>

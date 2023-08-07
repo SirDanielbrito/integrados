@@ -1,0 +1,273 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>NERDVANCE</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/cadastro.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    </head>
+	<body>
+       	<div class="image-container set-full-height set-full-width">
+            <!-- Creative Tim Branding -->
+            <a href="#">
+         <div class="logo-container">
+            <div class="logo">
+                <img src="assets/img/logo_n.png" alt="Nerdvance">
+            </div>
+            <div class="brand">
+                
+            </div>
+        </div>
+    </a>
+            <!-- Big container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <!-- Wizard container -->
+                        <div class="wizard-container">
+                            <div class="card wizard-card ct-wizard-orange" id="wizardProfile">
+                                <form action="" method="">
+                                    <!-- You can switch "ct-wizard-orange" with one of the next bright colors:
+                                    "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"
+                                    -->
+                                    <div class="wizard-header">
+                                        <h3>Faça já o seu
+                                            <b>Cadastro</b>
+                                            <br>
+                                            <small>Essas informações faram parte do seu perfil.</small>
+                                        </h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#about" data-toggle="tab">Conta</a>
+                                        </li>
+                                        <li>
+                                            <a href="#formacao" data-toggle="tab">Formação</a>
+                                        </li>
+                                        <li>
+                                            <a href="#account" data-toggle="tab">Interesses</a>
+                                        </li>
+                                        <li>
+                                            <a href="#address" data-toggle="tab">Endereço</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="about">
+                                            <div class="row">
+                                                <h4 class="info-text">Vamos começar com as informações básicas (com validação)</h4>
+                                                <div class="col-sm-4 col-sm-offset-1">
+                                                    <div class="picture-container">
+                                                        <div class="picture">
+                                                            <img src="assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title="">
+                                                            <input type="file" id="wizard-picture">
+                                                        </div>
+                                                        <h6>Escolher Imagem</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Primeiro Nome
+                                                            <small>(obrigatório)</small>
+                                                        </label>
+                                                        <input name="firstname" type="text" class="form-control" placeholder="Daniel">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Segundo Nome
+                                                            <small>(obrigatório)</small>
+                                                        </label>
+                                                        <input name="lastname" type="text" class="form-control" placeholder="Hoffmann">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Nickname
+                                                            <small>(obrigatório)</small>
+                                                        </label>
+                                                        <input name="nickname" type="text" class="form-control" placeholder="@dan_hoffman">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Data de Nascimento
+                                                            <small>(obrigatório)</small>
+                                                        </label>
+                                                        <input name="date" type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-10 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>E-mail
+                                                            <small>(obrigatório)</small>
+                                                        </label>
+                                                        <input name="email" type="email" class="form-control" placeholder="daniel@outlook.com">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="account">
+                                            <h4 class="info-text">Quais seus interesses? (Se possível selecione mais de um)</h4>
+                                            <div class="row">
+                                                <div class="col-sm-10 col-sm-offset-1">
+                                                    <div class="col-sm-4">
+                                                        <div class="choice" data-toggle="wizard-checkbox">
+                                                            <input type="checkbox" name="jobb" value="Animes">
+                                                            <div class="icon">
+                                                                <i>
+                                                                    <img class="imagem_animes" src="assets/img/anime.png">
+                                                                </i>
+                                                            </div>
+                                                            <h6>Animes</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="choice" data-toggle="wizard-checkbox">
+                                                            <input type="checkbox" name="jobb" value="Séries">
+                                                            <div class="icon">
+                                                                <i>
+                                                                    <img class="imagem_series" src="assets/img/tbbt.png">
+                                                                </i>
+                                                            </div>
+                                                            <h6>Séries</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="choice" data-toggle="wizard-checkbox">
+                                                            <input type="checkbox" name="jobb" value="Mangás">
+                                                            <div class="icon">
+                                                                <i>
+                                                                    <img class="imagem_mangas" src="assets/img/naruto_manga.png">
+                                                                </i>
+                                                            </div>
+                                                            <h6>Mangás</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="formacao">
+                                            <h4 class="info-text">Vamos falar um pouco da sua formação?</h4>
+                                            <div class="row">
+                                                <div class="col-sm-7 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>Onde você cursa/cursou ensino médio?</label>
+                                                        <input type="text" class="form-control" placeholder="E.E.carmen Netto dos Santos">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label>Ensino superior</label>
+                                                        <input type="text" class="form-control" placeholder="UNIP">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>Instituição - Curso Profissionalizante</label>
+                                                        <input type="text" class="form-control" placeholder="Microbyte">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label>Cursos profissionalizantes</label>
+                                                        <br>
+                                                        <select name="country" class="form-control">
+                                                            <option value="Nenhum">Nenhum</option>
+                                                            <option value="Administração">Administração</option>
+                                                            <option value="Design Gráfico">Design Gráfico</option>
+                                                            <option value="Departamento Pessoal">Departamento Pessoal</option>
+                                                            <option value="Espanhol">Espanhol</option>
+                                                            <option value="Informática Básica">Informática Básica</option>
+                                                            <option value="Inglês(Básico)">Inglês(Básico)</option>
+                                                            <option value="Inglês(Intermediário)">Inglês(Intermediário)</option>
+                                                            <option value="Inglês(Avançado)">Inglês(Avançado)</option>
+                                                            <option value="Logística">Logística</option>
+                                                            <option value="Secretariado">Secretariado</option>
+                                                            <option value="Web Designer">Web Designer</option>
+
+                                                        </select>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="address">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h4 class="info-text">Qual sua localização?</h4>
+                                                </div>
+                                                <div class="col-sm-7 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>Nome da rua</label>
+                                                        <input type="text" class="form-control" placeholder="Rua Haiti">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label>CEP</label>
+                                                        <input type="text" class="form-control" placeholder="08584-370">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>Cidade</label>
+                                                        <input type="text" class="form-control" placeholder="São Paulo">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label>País</label>
+                                                        <br>
+                                                        <select name="country" class="form-control">
+                                                            <option value="Afghanistan">Afghanistan</option>
+                                                            <option value="Albania">Albania</option>
+                                                            <option value="Algeria">Algeria</option>
+                                                            <option value="American Samoa">American Samoa</option>
+                                                            <option value="Andorra">Andorra</option>
+                                                            <option value="Angola">Angola</option>
+                                                            <option value="Anguilla">Anguilla</option>
+                                                            <option value="Antarctica">Antarctica</option>
+                                                            <option value="Afghanistan">Afghanistan</option>
+                                                            <option value="Albania">Albania</option>
+                                                            <option value="Algeria">Algeria</option>
+                                                            <option value="American Samoa">American Samoa</option>
+                                                            <option value="Andorra">Andorra</option>
+                                                            <option value="Angola">Angola</option>
+                                                            <option value="Anguilla">Anguilla</option>
+                                                            <option value="Antarctica">Antarctica</option>
+                                                            <option value="Brasil">Brasil</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wizard-footer">
+                                        <div class="pull-right">
+                                            <input type="button" class="btn btn-next btn-fill btn-warning btn-wd btn-sm" name="next" value="Avançar">
+                                            <a href="timeline.html"><input type="button" class="btn btn-finish btn-fill btn-warning btn-wd btn-sm" name="finish" value="Finalizar"></a>
+                                        </div>
+                                        <div class="pull-left">
+                                            <input type="button" class="btn btn-previous btn-fill btn-default btn-wd btn-sm" name="previous" value="Voltar">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- wizard container -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- big container -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+		
+	<!--   plugins 	 -->
+	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+	
+    <!--  methods for manipulating the wizard and the validation -->
+	<script src="assets/js/wizard.js"></script>
+
+</a></body></html>

@@ -1,0 +1,89 @@
+﻿*{
+	margin:0%;
+}
+
+body{
+	background: url(../img/background.png) repeat center top fixed;
+	width:100%;
+	height: 100%;
+	background-color:#000;
+
+}
+
+#feed h1{
+	font-size: 25px;
+    text-align: center;
+    font-family: segoe ui, arial;
+    padding-top: 4%;
+}
+#cabecalho{
+    background-color: #fff;
+    width: 100%;
+    height: 6.5%;
+    box-shadow: 1px 2px 3px #004C75;
+    text-align: left;
+}
+
+#cabecalho img{
+	width: 19%;
+    margin: 1.5% 5%;
+}
+
+.voltar a{
+	text-decoration:none;
+	outline:none;
+}
+.voltar{
+    width: 82px;
+    height: 27px;
+    background-color: #fff;
+    font-family: segoe ui;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 48%;
+    margin-top: 6%;
+	margin-bottom: 77px;
+}
+
+.voltar:hover{
+	background-color: #000;
+	color:#000;
+	transition: all 800ms ease-in-out;
+}
+
+#feed{
+	background-color: rgba(255, 255, 255, 0.98);
+    width: 857px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 4.5em;
+    font-family: segoe ui;
+}
+
+#centro{
+	margin: 7%;
+    text-align: justify;
+}
+
+#rodape{
+	display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 25px;
+    vertical-align: middle;
+    text-align: center;
+	background-color: #004C75;
+    box-shadow: 3px -1px 3px #004C75;
+}
+
+#rodape a{
+	color: #fff;
+    position: relative;
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+	bottom: -2px;
+	font-size: 11px;
+}

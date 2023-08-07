@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Thank you for watching--->
+    <!-- This is Geczi Manase -->
+    <!-- Have a nice day -->
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <script type="text/javascript">
+
+        //ok , it's working , we are done , if you want to add imgs you have to :
+
+        //1 - add an img tag with id : Img++; ex:  <img id="Img4" src="IMG/1.jpg"/>
+        //2 - add an li tag  with id : S++;   ex:  <li id="S4"></li>
+        //3 - add an p tag with id : SP++;    ex:  <p id="SP4"></p>
+        //4 - change the value of nrImg 
+
+        var nrImg = 9;  //the number of img , I only have 3 
+        var IntSeconds = 10;     //the seconds between the imgs
+
+        function Load()
+        {
+            nrShown = 0;    //the img visible
+            Vect = new Array(nrImg + 10);
+            Vect[0] = document.getElementById("Img1");
+            Vect[0].style.visibility = "visible";
+
+            document.getElementById("S" + 0).style.visibility = "visible";
+
+            for (var i = 1; i < nrImg; i++)
+            {
+                Vect[i] = document.getElementById("Img" + (i + 1));
+                document.getElementById("S" + i).style.visibility = "visible";
+            }
+
+            document.getElementById("S" + 0).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+            document.getElementById("SP" + nrShown).style.visibility = "visible";
+
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Timer()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+        }
+        //next img
+        function next()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function prev()
+        {
+            nrShown--;
+            if (nrShown == -1)
+                nrShown = nrImg -1;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        //here changes the img + effect
+        function Effect()
+        {
+            for (var i = 0; i < nrImg; i++)
+            {
+                Vect[i].style.opacity = "0";   //to add the fade effect
+                Vect[i].style.visibility = "hidden";
+
+                document.getElementById("S" + i).style.backgroundColor = "rgba(0, 0, 0, 0.70)";
+                document.getElementById("SP" + i).style.visibility = "hidden";
+            }
+            Vect[nrShown].style.opacity = "1";
+            Vect[nrShown].style.visibility = "visible";
+            document.getElementById("S" + nrShown).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
+            document.getElementById("SP" + nrShown).style.visibility = "visible";
+        }
+
+    </script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+		<meta name="description" content="See this example of create responsive form with integrate mailchimp. Using html, css and jquery. by Palloi Hofmann">
+		<meta name="keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5, mailchimp, jquery, ajax, api" />
+
+		<meta property="og:keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5, mailchimp, jquery, ajax, api" />
+		<meta property="og:description" content="See this example of create responsive form with integrate mailchimp. Using html, css and jquery. by Palloi Hofmann" />
+
+		<link rel="stylesheet" type="text/css" href="assets/css/style_index.css" />
+    <title>NERDVANCE</title>
+</head>
+<body onload="Load()">
+    <div id="slider">
+        <div id="imgs">
+            <!-- here you have to add the img tag -->
+            <img id="Img1" src="assets/img/startrek.jpg"/>
+            <img id="Img2" src="assets/img/starwars.jpg"/>
+            <img id="Img3" src="assets/img/superman.jpg"/>
+            <img id="Img4" src="assets/img/batman_arkham_knight.jpg"/>
+            <img id="Img5" src="assets/img/flash.jpg"/>
+            <img id="Img6" src="assets/img/arrow.jpg"/>
+            <img id="Img7" src="assets/img/deadpool.jpg"/>
+			<img id="Img8" src="assets/img/gameofthrones.jpg"/>
+			<img id="Img9" src="assets/img/lol.jpg"/>
+        </div>
+        <!--Here is going to be the left right buttons, the info and the imgs shown-->
+        <div id="Snav">
+            <!-- here is the circles , showes the current img -->
+            <div id="SnavUp">
+				<div id="Scircles">
+					<ul>
+						<!-- here you have to add the li tag-->
+						<li id="S0"></li>
+						<li id="S1"></li>
+						<li id="S2"></li>
+						<li id="S3"></li>
+						<li id="S4"></li>
+						<li id="S5"></li>
+						<li id="S6"></li>
+						<li id="S7"></li>
+						<li id="S8"></li>
+					</ul>
+				</div>
+            </div>
+            <!-- the left and right button -->
+            <div id="SnavMiddle">
+                <img id="Sleft" src="assets/img/left.png" onclick="prev()"/>
+                <img id="Sright" src="assets/img/right.png" onclick="next()"/>
+            </div>
+            <!-- the info -->
+            <div id="SnavBottom">
+                <!-- here you have to add the p tag-->
+                <p id="SP0">Star Trek</p>
+                <p id="SP1">Star Wars</p>
+                <p id="SP2">Superman</p>
+                <p id="SP3">Batman Arkham Knight</p>
+				<p id="SP4">Flash</p>
+				<p id="SP5">Arrow</p>
+				<p id="SP6">Deadpool</p>
+				<p id="SP7">Game of Thrones</p>
+				<p id="SP8">Jinx - League of Legends</p>
+            </div>
+        </div>
+    </div>
+	<div id="cabecalho" >
+			<section>
+				<form method="post" name="entrar" action="php/entrar.php">
+					<div class="entrar">
+						<div class="input">
+							<label for="email">E-mail</label>
+							<input type="text" id="email" name="email" placeholder="Digite seu e-mail" required/>
+						</div>
+						<div class="input">
+							<label for="senha">Senha</label>
+							<input type="password" id="senha" name="senha" placeholder="Digite sua senha" required/>
+						</div>
+					</div>
+					<div class="bot">
+						<span class="form-message"></span>
+						<input type="submit" value="Entrar" />
+					</div>
+				</form>
+			</section>
+			</div>
+		</div>
+		<div id="bemvindo">
+            <div class="bemvindo">
+			<img src="assets/img/logo_01.png"/>
+				<h3>Seja bem-vindo!!</h3></br>
+				<text><b>Nerdvance</b>, a nova rede social <b>Nerd/Geek</b>.</br>
+				Faça parte dessa família!!</br></text></br>
+				Ainda não é cadastrado?
+			</div>
+		</div>
+			<div id="cadastre-se">
+				<a href="cadastro.html">Cadastre-se</a>
+			</div>
+		<div id="rodape">
+				<!--<a href="#">MAPA DO SITE<a/>-->
+				<a href="termos.html">TERMOS DE USO<a/>
+				<a href="quemsomos.html">QUEM SOMOS<a/>
+				<a href="#">ANUNCIE CONOSCO<a/>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="http://css4html.com.br/assets/javascripts/jquery.phone.brazil.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

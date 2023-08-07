@@ -1,0 +1,454 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin:0; padding:0; border:0; background:transparent;
+  /*vertical-align: baseline;*/
+}
+
+html {
+	height: 100%;
+}
+body{
+    height: 100%;
+    color: #fff;
+    font-family: "segoe ui", Arial, sans-serif;
+	background-color: rgba(60, 60, 60, 0.80);
+    margin: 0 auto;
+    text-align: center;
+}
+h3{
+	font-size: 28px;
+    margin-top: -27px;
+}
+text{
+	font-size: 18px;
+}
+
+#imgs{
+	opacity: 0.9;
+}
+#cabecalho {
+	width: 100%;
+    height: 76px;
+    top: 0%;
+	position: relative;
+}
+
+#bemvindo{
+	position: relative;
+    margin: 0 auto;
+    width: 60%;
+	margin-top: 7%;
+}
+
+#bemvindo img {
+    width: 299px;
+    margin-bottom: 2.9em;
+    position: relative;
+}
+.bemvindo{
+    background-color: rgba(255, 255, 255, 0.86);
+    margin: 0 auto;
+    height: 0%;
+    width: 50%;
+    border-radius: 2px 96px 0px;
+    box-shadow: 0px 0px 300px rgba(255, 255, 255, 0.48);
+    padding: 30px;
+    vertical-align: middle;
+    color:#000;
+}
+
+#cadastre-se a{
+	background-color: #FFF;
+    text-decoration: blink;
+    color: #000;
+    position: relative;
+    padding: 9px 37px;
+    cursor: auto;
+    border: none;
+    font-size: 22px;
+    top: 35px;
+    border-radius: 9px;
+	box-shadow: 2px 1px 20px #FFFFFF;
+	transition: all 600ms ease-in-out;
+}
+
+#cadastre-se a:hover{
+	background-color: rgba(0, 76, 117, 0.86);
+    text-decoration: blink;
+    color: #fff;
+	box-shadow:none;
+}
+
+#rodape{
+	display: block;
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#rodape a{
+	color: #fff;
+    position: relative;
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+	bottom: -1px;
+	font-size: 11px;
+}
+
+	/*box-shadow: 3px 3px 7px rgba(0,0,0,0.5);*/
+	
+h1 {
+	font-family: segoe ui;
+    font-size: 27px;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+    margin: 0px 10px 20px 10px;
+    text-align: center;
+}
+
+#pcadastro {
+	margin-left: 33%;
+    padding: 2px 15px 11px 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 29%;
+    border-radius: 4px;
+    position: relative;
+}
+
+#pcadastro h1{
+	text-align: center;
+    font-family: segoe ui;
+    text-decoration: none;
+    font-style: italic;
+    margin: 7px;
+}
+
+#pcadastro:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.input {
+	float: left;
+	width: 48%;
+	padding: 0 1% 20px;
+	position: relative;
+}
+
+.input.txt { 
+	width: 98%; 
+}
+
+.input label {
+	font-family: segoe ui;
+    font-style: italic;
+    display: block;
+    padding-bottom: 4px;
+    color: #fff;
+    padding-top: 0px;
+    margin: 0px 0px 0px 0px;
+	font-size: 16px;
+}
+
+.input label.error {
+	position: absolute;
+	right: 18px;
+	top: 35px;
+	color: #f00;
+}
+
+.input input{
+	padding-top: 10px;
+	padding-bottom: 9px;
+	border: none;
+	font-size: 16px;
+	font-weight: 100;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.input input {
+    width: 83%;
+    padding: 2% 3% 3% 4%;
+    background-color: rgba(255, 255, 255, 0.51);
+    border-radius: 4px;
+}
+
+.buttons {
+	clear: both;
+    margin: 0px -1%;
+    padding-top: 13px;
+    border-top: 1px solid #D2D2D2;
+}
+
+.buttons input[type="submit"] {
+    float: right;
+    border: none;
+    height: 32px;
+    line-height: 1;
+    font-size: 18px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #204361;
+    transition: all 600ms ease-in-out;
+    border-radius: 0px 19px 0px 0px;
+	outline: none;
+}
+
+.buttons input[type="submit"]:hover {
+	color: #204361;
+	background-color: #fff;
+	border-radius: 0px 19px 0px 0px;
+}
+
+.form-message {
+	float: left;
+	padding-top: 5px;
+	color: #888;
+	opacity: 0;
+	transition: all 400ms ease-in-out;
+}
+
+.form-message.success {
+	color: green;
+	opacity: 1;
+}
+
+.form-message.error {
+	color: red;
+	opacity: 1;
+}
+
+@media screen and (max-width: 520px) {
+  .input {
+    width: 171px;
+  }
+
+  .form-message {
+    width: 260px;
+  }
+}
+
+.entrar.txt { 
+	width: 98%;
+}
+
+.entrar label {
+	font-family: segoe ui;
+    font-style: italic;
+    display: block;
+    padding-bottom: 4px;
+    color: #fff;
+    padding-top: 0px;
+    margin: 0px 8%;
+    text-align: left;
+}
+
+.entrar label.error {
+	position: absolute;
+	right: 18px;
+	top: 35px;
+	color: #f00;
+}
+
+.entrar input {
+	padding-top: 10px;
+	padding-bottom: 9px;
+	border: none;
+	font-size: 16px;
+	font-weight: 100;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(0, 0, 0, 0.55);
+   font: 12px;
+}
+
+:-moz-placeholder {
+   color: rgba(0, 0, 0, 0.55);
+   font: 12px;
+}
+
+::-moz-placeholder {
+   color: rgba(0, 0, 0, 0.55);
+   font: 12px;
+}
+
+:-ms-input-placeholder {  
+   color: rgba(0, 0, 0, 0.55);
+   font: 12px verdana, arial, sans-serif;
+}
+
+.entrar input {
+     width: 159px;
+    padding: 2% 3% 3% 4%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.bot {
+	float: right;
+    margin-top: 43px;
+    margin-right: 103px;
+}
+
+.bot input[type="submit"] {
+    float: right;
+    border: none;
+    height: 32px;
+    line-height: 1;
+    font-size: 18px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: #204361;
+    background-color: rgba(255, 255, 255, 0.78);
+    transition: all 600ms ease-in-out;
+    border-radius: 0px 19px 0px 0px;
+}
+
+.bot input[type="submit"]:hover {
+	color: #fff;
+	background-color: rgba(32,67,97,0.78);
+	border-radius: 0px 19px 0px 0px;
+}
+
+.entrar{
+	width: 29%;
+    padding: 0;
+    position: absolute;
+    margin: 0% 15% 2% 4%;
+    left: 53%;
+    color: #000;
+    top: 26%;
+}
+
+#imgs img {
+    /*overlays all the imgs */
+    /*You see only the first img, for now*/
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 3s;
+    visibility:hidden;
+    /*we want to show only 1 img at the time*/
+}
+
+/*the container */
+#Snav {
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* where the circles are going to be*/
+#SnavUp {
+    display:block;
+    width:100%;
+    height:20%;
+}
+
+#Scircles {
+	display: block;
+	width: 5%;
+	height: 15%;
+	margin-left: 2%;
+	margin-top: 7%;
+	position: relative;
+	float: left;        /* is going to be on the right side of the slider*/
+}
+
+#Scircles ul {
+    margin:0;
+    float:right;
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+#Scircles li {
+    /*we don't need the dots*/
+    list-style:none;
+    display:block;
+    background-color:rgba(0, 0, 0, 1);
+	width: 11px;
+    height: 11px;
+    margin-left:5%;
+    float:left;     /*on the same line*/
+    visibility:hidden;
+    /*we need circles, not squares*/
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+
+}
+
+/*ok , we are done with the SnavUp*/
+#SnavMiddle {
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:10%;     /*this is up to you , where you want the buttons*/
+}
+
+/*left button*/
+#Sleft {
+    width:8%;
+    height:100%;
+    float:left;
+    margin-left:3%;
+    opacity: 0.1;
+}
+
+/*button effect*/
+#Sleft:hover {
+    opacity:0.3;
+	cursor: auto;
+	transition: all 200ms ease-in-out;
+}
+
+#Sright {
+    width:8%;
+    height:100%;
+    float:right;
+    margin-right:3%;
+    opacity: 0.1;
+}
+
+#Sright:hover {
+    opacity:0.3;
+	cursor: auto;
+	transition: all 200ms ease-in-out;
+}
+
+/*now we have to add the info at the bottom of the slider*/
+
+#SnavBottom p {
+	font: italic 162% segoe ui;
+    color: #fff;
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    margin-left: 3%;
+    vertical-align: middle;
+    visibility: hidden;
+}
+/*that's all , now we need to code the slider, the effect*/
