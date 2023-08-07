@@ -1,0 +1,147 @@
+﻿body{
+	margin:0px;
+	font-family:"Segoe ui", "Arial", sans-serif; /*Fontes da div Body, se não tiver segoe ui, procure ARIAL etc.*/
+	font-size:12px; /*Tamanho da fonte da div Body*/
+	min-width:900px;
+	height:100%;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #666666;
+    border-left: 0px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: orange;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #666666
+ }
+ 
+#topo{
+	width:100%; /*lagura do topo*/
+	height:120px; /*altura do topo*/
+	background-color:#fccf00; /*cor de fundo do topo*/
+	text-align:center; /*Alinhamento do topo*/
+}
+#topo img{
+	margin-top: 7px;
+}
+#menu{
+	width:100%; /*largura*/
+	height:35px; /*altura*/
+	line-height:35px; /*Linha extra do menu*/
+	background-color:#cccccc; /*cor de fundo do menu*/
+	border-bottom: 3px groove #cccccc; /*tamanho e cor da borda de baixo*/
+	border-top: 1px groove #ffffff; /*tamanho e cor da borda de cima*/
+	text-align:center; /*alinhamento do texto menus	*/
+}
+#menu a:link{ /*Menu quando estiver em ação com o posicionamento do mouse*/
+	text-decoration:none; /*texto sem sublinhado*/
+	display:inline-block; /* Espaçamento do display do menu*/
+	height:35px; /*Altura do Bloco posicionado*/
+	width:95px; /*Largura do Bloco posicionado*/
+	color: #000000;
+}
+#menu a:hover{
+	text-decoration:none; /*texto sem sublinhado*/
+	background-color:#666666; /*Cor do posicionamento do mouse*/
+}
+#menu a:visited{ /*Link depois de visitado*/
+	text-decoration:none;
+	font-size:14px;
+	color:#000000; /*cor do após visitado*/
+}
+.destaque{
+	background-image: linear-gradient(to top, #ff8c00, #ffffff); /*cor linear no fundo da DIV destaque*/
+	width:100%; /*largura da DIV destaque*/
+	height: 100%;
+	float:left; /*Flutuando para a esquerda*/
+}
+.destaque h1{
+	font-size: 35px;
+	color: #333333;
+	text-align: center;
+}
+.destaque h2{
+	margin-top: -10px;
+	font-size:18px;
+	color:#797979;
+	text-align: center;
+}
+.destaque img{
+  margin-left: 8%;
+  margin-top: -65px; /*Margem do Top*/
+  margin-bottom: 37px; /*Margem de Baixo*/
+}
+.destaque p{ /*essa classe é o texto*/
+	font-size: 15px;
+	float: right; /*flutuando para a direita*/
+	width: 544px; /*largura*/
+	height: 308px; /*altura*/
+	margin: 30px; /* margem*/
+	padding: 10px; /*distancia entre a DIV e Conteúdo*/
+	position:absolute; /* posição do conteúdo*/
+	top: 257px; /*Posicionamento a partir do topo*/
+	left: 341px; /*Posicionamento a partir da esquerda*/
+}
+#rodape{
+	font-family: arial;
+	color: #cccccc;
+	width:98%; /*largura do rodapé*/
+	height:14px; /*altura do rodapé*/
+	background-color:#666666; /*cor de fundo do rodapé*/
+	border-top: 2px groove #cccccc; /*Cor e grossura da borda do rodapé*/
+	clear:both; /*vai limpar as flutuações no elemento e deixar ele no lugar certo*/
+	padding:1%; /*distancia entre a DIV e Conteúdo*/
+}
+#rodape img{
+	margin-top: -8px;
+	margin-right: -3px;
+	float: right;
+	padding-left: 18px;
+	position: relative;
+	right: 31px;
+}
+.clique a{
+	font-weight: bold;
+	text-align: center;
+	text-decoration:none; /*texto sem sublinhado*/
+	padding: 14px; /*distancia entre a DIV e Conteúdo*/
+	background-color: #6E6E6E; /*cor do fundo do texto*/
+	width:236px; /*Largura retangulo*/
+	color: #FFF; /*Cor do retangulo*/
+	position: absolute; /*Posição absoluta do retangulo*/
+	top: 548px; /*Posicionamento a partir do topo*/
+	left: 513px; /*Posicionamento a partir da esquerda*/
+	font-family: segoe ui; /*Fonte*/
+	font-style: oblique; /*Estilo da fonte*/
+	font-size: 14px; /*tamanho da fonte*/
+	box-shadow: 3px 3px 10px #353530; /*Efeito sombra*/
+}
+.clique a:link{ /*Menu quando estiver em ação com o posicionamento do mouse*/
+	text-decoration:none; /*texto sem sublinhado*/
+	height: 22px; /*Altura do Bloco posicionado*/
+	width: 254px; /*Largura do Bloco posicionado*/
+}
+.clique a:hover{
+	text-decoration:none; /*texto sem sublinhado*/
+	background-color:#666666; /*Cor do posicionamento do mouse*/
+}
+.clique a:visited{ /*Link depois de visitado*/
+	text-decoration:none;
+	font-size:14px;
+	color:#ffffff; /*cor do após visitado*/
+}
+/* efeito Gradiente = background-image: linear-gradient(to bottom, #ff8c00, #ffffff);*/

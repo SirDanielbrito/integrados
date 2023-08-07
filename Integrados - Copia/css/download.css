@@ -1,0 +1,106 @@
+﻿body{
+	margin:0px;
+	font-family:"Segoe ui", "Arial", sans-serif; /*Fontes da div Body, se não tiver segoe ui, procure ARIAL etc.*/
+	font-size:12px; /*Tamanho da fonte da div Body*/
+	min-width:900px;
+	height:100%;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171
+ }
+ 
+#topo{
+	width:100%; /*lagura do topo*/
+	height:120px; /*altura do topo*/
+	background-color:#fccf00; /*cor de fundo do topo*/
+	text-align:center; /*Alinhamento do topo*/
+}
+#topo img{
+	margin-top: 7px;
+}
+#menu{
+	width:100%; /*largura*/
+	height:35px; /*altura*/
+	line-height:35px; /*Linha extra do menu*/
+	background-color:#cccccc; /*cor de fundo do menu*/
+	border-bottom: 3px groove #cccccc; /*tamanho e cor da borda de baixo*/
+	border-top: 1px groove #ffffff; /*tamanho e cor da borda de cima*/
+	text-align:center; /*alinhamento do texto menus	*/
+}
+#menu a:link{ /*Menu quando estiver em ação com o posicionamento do mouse*/
+	text-decoration:none; /*texto sem sublinhado*/
+	display:inline-block; /* Espaçamento do display do menu*/
+	height:35px; /*Altura do Bloco posicionado*/
+	width:95px; /*Largura do Bloco posicionado*/
+	color: #000000;
+}
+#menu a:hover{
+	text-decoration:none; /*texto sem sublinhado*/
+	background-color:#666666; /*Cor do posicionamento do mouse*/
+}
+#menu a:visited{ /*Link depois de visitado*/
+	text-decoration:none;
+	font-size:14px;
+	color:#000000; /*cor do após visitado*/
+}
+.destaque{
+	background-image: linear-gradient(to top, #ff8c00, #ffffff); /*cor linear no fundo da DIV destaque*/
+	width:100%; /*largura da DIV destaque*/
+	height: 100%;
+	float:left; /*Flutuando para a esquerda*/
+}
+.destaque img{
+  margin-top: 0px; /*Margem topo*/
+  margin-bottom: 60px; /*marigem baixo*/
+  padding: 11px; /*Distancia entre conteudo e DIV*/
+  position: relative; /*Posição relativa*/
+  top: 6px; /*posicionamento topo*/
+}
+.destaque h1 {
+  font-size: 37px;
+  color: #333333;
+}
+.destaque h2 {
+  margin-top: -10px;
+  font-size: 18px;
+  color: #797979;
+ }		
+#rodape{
+	font-family: arial;
+	color: #cccccc;
+	width:98%; /*largura do rodapé*/
+	height:14px; /*altura do rodapé*/
+	background-color:#666666; /*cor de fundo do rodapé*/
+	border-top: 2px groove #cccccc; /*Cor e grossura da borda do rodapé*/
+	clear:both; /*vai limpar as flutuações no elemento e deixar ele no lugar certo*/
+	padding:1%; /*distancia entre a DIV e Conteúdo*/
+}
+#rodape img{
+	margin-top: -8px;
+	margin-right: -3px;
+	float: right;
+	padding-left: 18px;
+	position: relative;
+	right: 31px;
+}
+/* efeito Gradiente = background-image: linear-gradient(to bottom, #ff8c00, #ffffff);*/

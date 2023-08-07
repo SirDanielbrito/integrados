@@ -1,0 +1,148 @@
+﻿body{
+	margin:0px;
+	font-family:"Segoe ui", "Arial", sans-serif; /*Fontes da div Body, se não tiver segoe ui, procure ARIAL etc.*/
+	font-size:12px; /*Tamanho da fonte da div Body*/
+	min-width:900px;
+	height:100%;
+}
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171
+ }
+ 
+#topo{
+	width:100%; /*lagura do topo*/
+	height:120px; /*altura do topo*/
+	background-color:#fccf00; /*cor de fundo do topo*/
+	text-align:center; /*Alinhamento do topo*/
+}
+#topo img{
+	margin-top: 7px; /*Margem topo da imagem*/
+}
+#menu{
+	width:100%; /*largura do menu*/
+	height:35px; /*altura do menu*/
+	line-height:35px; /*Linha extra do menu*/
+	background-color:#cccccc; /*cor de fundo do menu*/
+	border-bottom: 3px groove #cccccc; /*tamanho e cor da borda de baixo*/
+	border-top: 1px groove #ffffff; /*tamanho e cor da borda de cima*/
+	text-align:center; /*alinhamento do texto menus	*/
+}
+#menu a:link{ /*Menu quando estiver em ação com o posicionamento do mouse link*/
+	text-decoration:none; /*texto sem sublinhado*/
+	display:inline-block; /* Espaçamento do display do menu*/
+	height:35px; /*Altura do Bloco posicionado*/
+	width:95px; /*Largura do Bloco posicionado*/
+	color: #000000;
+}
+#menu a:hover{ /*efeito HOVER durante o posicionamento do mouse*/
+	text-decoration:none; /*texto sem sublinhado*/
+	background-color:#666666; /*Cor do posicionamento do mouse*/
+}
+#menu a:visited{ /*Link depois de visitado*/
+	text-decoration:none; /*Sem sublinhado*/
+	font-size:14px; /*Tamanho da fonte*/
+	color:#000000; /*cor do após visitado*/
+}
+.destaque{
+	background-image: linear-gradient(to top, #ff8c00, #ffffff); /*cor linear no fundo da DIV destaque*/
+	width:100%; /*largura da DIV destaque*/
+	float:left; /*Flutuando para a esquerda*/
+	height: 86%; /*altura*/
+}
+.destaque img{ /*imagem*/
+  margin-top: 0px; /*Margem topo*/
+  margin-bottom: 60px; /*marigem baixo*/
+  padding: 11px; /*Distancia entre conteudo e DIV*/
+  position: relative; /*Posição relativa*/
+  top: 6px; /*posicionamento topo*/
+}
+.destaque h1 {
+  font-size: 37px;
+  color: #333333;
+}
+.destaque h2 {
+  margin-top: -10px; /*margem do topo*/
+  font-size: 18px;
+  color: #797979;
+}
+form {
+	font-family: 'Oswald', sans-serif;
+	text-align: left; /*texto alinhado a esquerda*/
+	font-size: 15px;
+}
+label, input[type=submit], input [type=text], textarea {
+	display: block; /*Display alinhado horizontamente*/
+	font-size: 17px;
+	margin-bottom: 1px; /*Margem Baixo*/
+	margin-top: 5px; /*Margem topo*/
+}
+.formulario{
+	width: 300px;
+	height: 292px;
+	padding: 17px; /*Espaçamento*/
+}
+textarea{
+	width: 300px;
+	height: 80px
+}
+textarea[placeholder="Deixe seu comentário"]{
+	font-family: arial; /*Tipo de fonte*/
+	font-size: 14px;
+	padding: 8px;
+}
+input[type=submit]{
+	background: #333333; /*Fundo do botão enviar*/
+	color: #ffffff;
+	cursor: pointer; /*Estilo de cursor quando posicionado no botão*/
+	padding:10px 20px; /*espaçamento Cima/Baixo e Direita/Esquerda*/
+	outline: none;
+	border: 0; /*Sem borda*/
+	margin-top: 10px;
+	margin-left: 104px;
+}
+input[type=submit]:hover{ /*quando o mouse se posiciona em cima do botão*/
+	background: #ff6600;
+}
+input[type=text], input[type=mail]{ /*Bordas e tamanhos dos campos texto e e-mail*/
+	width: 300px;
+	height: 29px;
+	border-bottom: rgb(255, 145, 0);
+}
+#rodape{
+	font-family: arial;
+	color: #cccccc;
+	width:98%; /*largura do rodapé*/
+	height:14px; /*altura do rodapé*/
+	background-color:#666666; /*cor de fundo do rodapé*/
+	border-top: 2px groove #cccccc; /*Cor e grossura da borda do rodapé*/
+	clear:both; /*vai limpar as flutuações no elemento e deixar ele no lugar certo*/
+	padding:1%; /*distancia entre a DIV e Conteúdo*/
+}
+#rodape img{
+	margin-top: -8px;
+	margin-right: -3px;
+	float: right;
+	padding-left: 18px;
+	position: relative; /*Posição relativa*/
+	right: 31px; /*posicionemento à direita*/
+}
+/* efeito Gradiente = background-image: linear-gradient(to bottom, #ff8c00, #ffffff);*/
