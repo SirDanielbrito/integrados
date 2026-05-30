@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Integrados</title>
   <link rel="icon" href="img/int.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -31,23 +34,24 @@
 
       <div class="contact-wrapper">
         <div class="form-card">
+          <!-- TODO: Em produção, alterar action para endpoint de servidor real -->
           <form action="mensagem.html" method="post">
 
             <div class="form-group">
               <label for="nome">Nome completo</label>
-              <input id="nome" type="text" name="nome" placeholder="Digite seu nome">
+              <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required minlength="2" maxlength="100">
             </div>
 
             <div class="form-group">
               <label for="email">E-mail</label>
-              <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+              <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
             </div>
 
             <div class="form-group">
               <label>O que você achou do aplicativo?</label>
               <div class="radio-group">
                 <label class="radio-option">
-                  <input type="radio" name="opcao" value="otimo"> Ótimo
+                  <input type="radio" name="opcao" value="otimo" required> Ótimo
                 </label>
                 <label class="radio-option">
                   <input type="radio" name="opcao" value="bom" checked> Bom
@@ -60,7 +64,7 @@
 
             <div class="form-group">
               <label for="comented">Comentário</label>
-              <textarea id="comented" name="msg" placeholder="Deixe seu comentário sobre o Integrados"></textarea>
+              <textarea id="comented" name="msg" placeholder="Deixe seu comentário sobre o Integrados" required minlength="10" maxlength="1000"></textarea>
             </div>
 
             <button type="submit" class="btn-submit">Enviar Mensagem</button>
@@ -75,14 +79,11 @@
   <footer id="rodape">
     <span>© Integrados — Todos os Direitos Reservados</span>
     <div class="footer-social">
-      <a href="https://www.facebook.com/" target="_blank" title="Seguir no Facebook">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Seguir no Facebook">
         <img src="img/fb.png" alt="Facebook">
       </a>
-      <a href="https://twitter.com/" target="_blank" title="Seguir no Twitter">
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Seguir no Twitter">
         <img src="img/twt.png" alt="Twitter">
-      </a>
-      <a href="https://plus.google.com/" target="_blank" title="Adicionar ao Google+">
-        <img src="img/g+.png" alt="Google+">
       </a>
     </div>
   </footer>
